@@ -2,29 +2,36 @@
 "use client";
 
 import styled from "styled-components";
+import Header from "@/components/layout/header/Header";
+import HomeHeroSection from "@/components/sections/hero/HomeHeroSection"
+import HomePhilosophySection from "@/components/sections/about/HomePhilosophySection"
+import HomeServicesSection from "@/components/sections/treatment/HomeServicesSection"
+import HomeDoctorsSection from "@/components/sections/doctors/HomeDoctorsSection"
+import HomeLocationSection from "@/components/sections/location/HomeLocationSection"
+import Footer from "@/components/layout/footer/Footer"
+
 
 const Container = styled.main`
-  min-height: 100vh;
+  max-width: 1920px;
+  width: 100%;
+  height: max-content;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f8f7f4;
+  flex-direction: column;
+  background-color: #FFFFFF;
 `;
 
-const Title = styled.h1`
-  font-size: 48px;
-  font-weight: 600;
-  color: #334a42;
 
-  @media (max-width: 768px) {
-    font-size: 32px;
-  }
-`;
 
 export default function Home() {
   return (
     <Container>
-      <Title>온유피부과</Title>
+      <Header />
+      <HomeHeroSection />
+      <HomePhilosophySection />
+      <HomeServicesSection />
+      <HomeDoctorsSection />
+      <HomeLocationSection />
+      <Footer />
     </Container>
   );
 }
