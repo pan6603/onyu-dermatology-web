@@ -10,6 +10,11 @@ export const HeaderContainer = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* Tablet */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        height: 64px;
+    }
 `
 
 export const HeaderInner = styled.div`
@@ -23,6 +28,12 @@ export const HeaderInner = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    /* Tablet */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 `
 
 export const HeaderLogo = styled.div`
@@ -33,12 +44,24 @@ export const HeaderLogo = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    /* Tablet */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        max-width: 180px;
+        height: 40px;
+    }
 `
 
 export const LogoText = styled.div`
     max-width: 150px;
     width: 100%;
     height: 47px;
+
+    /* Tablet */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        max-width: 130px;
+        height: 40px;
+    }
 `
 
 export const BrandName = styled.span`
@@ -49,6 +72,13 @@ export const BrandName = styled.span`
     letter-spacing: -0.55px;
     text-align: left;
     color: #1b1c1c;
+
+    /* Tablet */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        font-size: 18px;
+        line-height: 25.2px;
+        letter-spacing: -0.45px;
+    }
 `
 
 export const BrandSubtitle = styled.p`
@@ -58,6 +88,13 @@ export const BrandSubtitle = styled.p`
     line-height: 16.8px;
     letter-spacing: 1.2px;
     color: #6f5a4b;
+
+    /* Tablet */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 1px;
+    }
 `
 
 

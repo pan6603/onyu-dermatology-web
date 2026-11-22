@@ -4,7 +4,7 @@ export const HomeHeroSectionContainer = styled.section`
     max-width: 1920px;
     width: 100%;
     height: 1257px;
-    background: #FBF9F8;
+    background: #F6F3F2;
 
     display: flex;
     align-items: center;
@@ -16,7 +16,9 @@ export const HomeHeroSectionInner = styled.div`
     max-width: 1280px;
     width: 100%;
     height: 100%;
-    background: yellow;
+    background: #F6F3F2;
+
+    padding: 80px 128px 48px 48px;
 `
 
 export const HomePhilosophySectionContainer = styled.section`

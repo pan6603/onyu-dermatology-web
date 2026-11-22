@@ -13,4 +13,12 @@ export const LogoIconContainer = styled.div`
     justify-content: center;
 
     padding: 4px;
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        max-width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        padding: 4px;
+        flex-shrink: 0;
+    }
 `
