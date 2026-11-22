@@ -15,6 +15,11 @@ export const HeaderContainer = styled.header`
     @media (min-width: 769px) and (max-width: 1024px) {
         height: 64px;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        height: 60px;
+    }
 `
 
 export const HeaderInner = styled.div`
@@ -34,6 +39,12 @@ export const HeaderInner = styled.div`
         padding-left: 32px;
         padding-right: 32px;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 `
 
 export const HeaderLogo = styled.div`
@@ -50,6 +61,12 @@ export const HeaderLogo = styled.div`
         max-width: 180px;
         height: 40px;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        max-width: 160px;
+        height: 36px;
+    }
 `
 
 export const LogoText = styled.div`
@@ -61,6 +78,12 @@ export const LogoText = styled.div`
     @media (min-width: 769px) and (max-width: 1024px) {
         max-width: 130px;
         height: 40px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        max-width: 120px;
+        height: 36px;
     }
 `
 
@@ -79,6 +102,14 @@ export const BrandName = styled.span`
         line-height: 25.2px;
         letter-spacing: -0.45px;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 22.4px;
+        letter-spacing: -0.4px;
+        white-space: nowrap;
+    }
 `
 
 export const BrandSubtitle = styled.p`
@@ -95,6 +126,14 @@ export const BrandSubtitle = styled.p`
         line-height: 14px;
         letter-spacing: 1px;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        font-size: 9px;
+        line-height: 12.6px;
+        letter-spacing: 0.9px;
+        white-space: nowrap;
+    }
 `
 
 
@@ -106,6 +145,18 @@ export const HeaderNav = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    /* Tablet */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        max-width: 400px;
+        height: 36px;
+        gap: 16px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        display: none;
+    }
 `
 
 export const NavMenu = styled.nav`
@@ -116,6 +167,18 @@ export const NavMenu = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    /* Tablet */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        max-width: 300px;
+        height: 20px;
+        gap: 12px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        display: none;
+    }
 `
 
 export const NavLink = styled(Link)`
@@ -126,6 +189,21 @@ export const NavLink = styled(Link)`
     letter-spacing: 0.025em;
     color: #444748;
     text-decoration: none;
+
+    /* Tablet */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        font-size: 13px;
+        line-height: 1.4;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
 `
 
 export const HeaderCTA = styled(Link)`
@@ -148,6 +226,24 @@ export const HeaderCTA = styled(Link)`
     justify-content: center;
 
     border-radius: 4px;
+
+    /* Tablet */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        max-width: 88px;
+        height: 36px;
+        font-size: 13px;
+        line-height: 18.2px;
+        letter-spacing: 0.3px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        max-width: 80px;
+        height: 34px;
+        font-size: 12px;
+        line-height: 16.8px;
+        letter-spacing: 0.25px;
+    }
 `
 
 

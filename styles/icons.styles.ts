@@ -21,4 +21,13 @@ export const LogoIconContainer = styled.div`
         padding: 4px;
         flex-shrink: 0;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        max-width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        padding: 4px;
+        flex-shrink: 0;
+    }
 `
