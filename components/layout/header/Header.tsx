@@ -11,7 +11,7 @@ import {
     HeaderCTA
 } from "@/styles/layout.styles"
 import LogoIcon from "@/components/common/ui/icons/LogoIcon"
-
+import MobileMenuIcon from "@/components/common/ui/icons/MobileMenuIcon"
 
 
 export default function Header() {
@@ -36,6 +36,9 @@ export default function Header() {
                         </NavMenu>
                         <HeaderCTA href="">진료 예약</HeaderCTA>
                     </HeaderNav>
+
+                    {/* 모바일 사이즈일때 화면 노출 */}
+                    <MobileMenuIcon />
                 </HeaderInner>
             </HeaderContainer>
         </>
