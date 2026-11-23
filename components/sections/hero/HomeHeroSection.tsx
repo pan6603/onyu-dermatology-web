@@ -75,9 +75,7 @@ export default function HomeHeroSection() {
                     </HomeHeroText>
 
                     <HomeHeroActions>
-                        <HeroSecondaryButton href="">
-                            병원 소개 바로가기
-                        </HeroSecondaryButton>
+                        <HeroSecondaryButton href="">병원 소개 바로가기</HeroSecondaryButton>
 
                         <HeroPrimaryButton href="">
                             온라인 상담 예약
