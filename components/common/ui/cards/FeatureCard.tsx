@@ -28,6 +28,19 @@ const FeatureCardContainer = styled.div`
 
         box-sizing: border-box;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        max-width: none;
+        width: 100%;
+        height: auto;
+        min-height: 100px;
+
+        padding: 16px;
+        gap: 12px;
+
+        box-sizing: border-box;
+    }
 `
 
 const FeatureCardContent = styled.div`
@@ -37,6 +50,13 @@ const FeatureCardContent = styled.div`
 
     /* Tablet */
     @media (min-width: 769px) and (max-width: 1024px) {
+        min-width: 0;
+        gap: 6px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        flex: 1;
         min-width: 0;
         gap: 6px;
     }
@@ -56,6 +76,13 @@ const FeatureCardTitle = styled.span`
         font-size: 15px;
         line-height: 22px;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        font-size: 15px;
+        line-height: 23px;
+        letter-spacing: -0.05px;
+    }
 `
 
 const FeatureCardDescription = styled.p`
@@ -69,6 +96,13 @@ const FeatureCardDescription = styled.p`
 
     /* Tablet */
     @media (min-width: 769px) and (max-width: 1024px) {
+        font-size: 12px;
+        line-height: 19px;
+        overflow-wrap: break-word;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
         font-size: 12px;
         line-height: 19px;
         overflow-wrap: break-word;

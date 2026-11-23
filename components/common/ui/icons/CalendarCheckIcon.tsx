@@ -12,6 +12,13 @@ const CalendarCheckIconContainer = styled.div`
         width: 15px;
         height: 15px;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+    }
 `
 
 
