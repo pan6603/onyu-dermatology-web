@@ -19,6 +19,16 @@ export const HomeHeroSectionContainer = styled.section`
         padding-top: 64px;
         padding-bottom: 64px;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        height: auto;
+        min-height: auto;
+        padding-top: 48px;
+        padding-bottom: 48px;
+
+        align-items: flex-start;
+    }
 `
 
 
@@ -40,6 +50,16 @@ export const HomeHeroSectionInner = styled.div`
         padding: 0 32px;
         gap: 32px;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        height: auto;
+        padding: 0 16px;
+
+        gap: 32px;
+        justify-content: flex-start;
+        box-sizing: border-box;
+    }
 `
 
 export const HomeHeroEyebrow = styled.div`
@@ -56,6 +76,13 @@ export const HomeHeroEyebrow = styled.div`
         height: auto;
         min-height: 25px;
         gap: 10px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        height: auto;
+        min-height: 25px;
+        gap: 8px;
     }
 
 `
@@ -83,6 +110,20 @@ export const EyebrowBadge = styled.div`
         padding: 0 10px;
         flex-shrink: 0;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        max-width: 240px;
+        width: auto;
+        min-height: 24px;
+        height: auto;
+
+        padding: 4px 8px;
+        border-radius: 12px;
+
+        flex-shrink: 1;
+        box-sizing: border-box;
+    }
 `
 
 export const BadgeText = styled.span`
@@ -101,6 +142,14 @@ export const BadgeText = styled.span`
         letter-spacing: 1px;
         white-space: nowrap;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        font-size: 10px;
+        line-height: 14px;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+    }
 `;
 
 export const BadgeDivider = styled.div`
@@ -112,6 +161,12 @@ export const BadgeDivider = styled.div`
     /* Tablet */
     @media (min-width: 769px) and (max-width: 1024px) {
         max-width: 36px;
+        flex-shrink: 0;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        max-width: 24px;
         flex-shrink: 0;
     }
 `
@@ -132,6 +187,16 @@ export const HomeHeroContent = styled.div`
 
         align-items: flex-end;
         justify-content: space-between;
+        gap: 24px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        height: auto;
+
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
         gap: 24px;
     }
 `
@@ -155,6 +220,17 @@ export const HomeHeroText = styled.div`
         flex: 1;
         min-width: 0;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+
+        gap: 16px;
+        justify-content: flex-start;
+        min-width: 0;
+    }
 `
 
 export const HeroTitle = styled.h1`
@@ -170,6 +246,13 @@ export const HeroTitle = styled.h1`
         font-size: 40px;
         line-height: 52px;
         letter-spacing: -1px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        font-size: 32px;
+        line-height: 42px;
+        letter-spacing: -0.8px;
     }
 `
 
@@ -187,6 +270,13 @@ export const HeroDescription = styled.p`
         font-size: 15px;
         line-height: 25px;
         letter-spacing: -0.08px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 23px;
+        letter-spacing: -0.05px;
     }
 `
 
@@ -208,6 +298,24 @@ export const HomeHeroActions = styled.div`
         height: auto;
 
         flex-shrink: 0;
+        gap: 12px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    /* Small Mobile */
+    @media (max-width: 360px) {
+        flex-direction: column;
         gap: 12px;
     }
 `
@@ -241,6 +349,34 @@ export const HeroSecondaryButton = styled(Link)`
         box-sizing: border-box;
         white-space: nowrap;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        max-width: none;
+        width: 100%;
+        height: 44px;
+
+        flex: 1;
+        min-width: 0;
+
+        padding: 12px 8px;
+        font-size: 12px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        box-sizing: border-box;
+        white-space: nowrap;
+        text-decoration: none;
+    }
+
+    /* Small Mobile */
+    @media (max-width: 360px) {
+        max-width: 100%;
+        flex: none;
+        font-size: 13px;
+    }
 `
 
 export const HeroPrimaryButton = styled(Link)`
@@ -273,6 +409,33 @@ export const HeroPrimaryButton = styled(Link)`
         white-space: nowrap;
         flex-shrink: 0;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        max-width: none;
+        width: 100%;
+        height: 44px;
+
+        flex: 1;
+        min-width: 0;
+
+        padding: 12px 8px;
+        font-size: 12px;
+
+        justify-content: center;
+        gap: 4px;
+
+        box-sizing: border-box;
+        white-space: nowrap;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    /* Small Mobile */
+    @media (max-width: 360px) {
+        flex: none;
+        font-size: 13px;
+    }
 `
 
 
@@ -290,6 +453,17 @@ export const HomeHeroImageContainer = styled.div`
         height: 400px;
         border-radius: 12px;
     }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        height: 280px;
+        border-radius: 8px;
+    }
+
+    /* Small Mobile */
+    @media (max-width: 360px) {
+        height: 220px;
+    }
 `
 
 export const HomeHeroFeatures = styled.div`
@@ -299,6 +473,7 @@ export const HomeHeroFeatures = styled.div`
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    gap: 18px;
 
     /* Tablet */
     @media (min-width: 769px) and (max-width: 1024px) {
@@ -307,6 +482,16 @@ export const HomeHeroFeatures = styled.div`
         align-items: stretch;
         justify-content: space-between;
         gap: 16px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        height: auto;
+
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 12px;
     }
 `
 
